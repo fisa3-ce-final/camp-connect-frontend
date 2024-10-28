@@ -1,5 +1,3 @@
-// app/landing/page.tsx
-
 import { Button } from "@/components/ui/button";
 import {
     Card,
@@ -8,8 +6,9 @@ import {
     CardTitle,
     CardDescription,
 } from "@/components/ui/card";
-import { TestForm } from "./test-form";
-import TestButton from "./test-button";
+import TestButton from "@/app/components/test-button";
+import { TestForm } from "@/app/components/test-form";
+import Link from "next/link";
 
 export default function LandingPage() {
     return (
@@ -22,10 +21,12 @@ export default function LandingPage() {
                 <p className="text-lg md:text-2xl mb-8">
                     Discover the future of [Your Service or Product] today.
                 </p>
-                <Button size="lg">Get Started</Button>
+                <Link href="/main">
+                    <Button size="lg">Get Started</Button>
+                </Link>
             </section>
-            <TestButton />
-            <TestForm />
+            {/* <TestButton /> */}
+            {/* <TestForm /> */}
 
             {/* Feature Section */}
             <section className="w-full py-16 bg-white text-gray-800 p-6">
