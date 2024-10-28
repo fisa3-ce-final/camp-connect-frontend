@@ -28,21 +28,21 @@ export function GlobalNav() {
                     <span>렌탈</span>
                 </Link>
                 <Link
-                    href="/main/community"
+                    href="/community"
                     className="flex flex-col items-center md:flex-row md:space-x-2"
                 >
                     <MessageSquare className="w-6 h-6" />
                     <span>커뮤니티</span>
                 </Link>
                 <Link
-                    href="/main/alarm"
+                    href="/alarm"
                     className="flex flex-col items-center md:flex-row md:space-x-2"
                 >
                     <Bell className="w-6 h-6" />
                     <span>알람</span>
                 </Link>
                 <Link
-                    href="/main/mypage"
+                    href="/mypage"
                     className="flex flex-col items-center md:flex-row md:space-x-2"
                 >
                     <User className="w-6 h-6" />
